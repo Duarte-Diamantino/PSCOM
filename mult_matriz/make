@@ -1,0 +1,13 @@
+CC=gcc
+CFLAGS= -Wall -g -pthread
+LDFLAGS= -lpthread
+
+EXECS= matriz_mult
+
+
+all: $(EXECS)
+
+matriz_mult:
+
+clean:
+	rm -f $(EXECS) *.o
